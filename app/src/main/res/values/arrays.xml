@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Databse keys -->
+    <string-array name="categories">
+        <item>natural_landmarks</item>
+        <item>historical_landmarks</item>
+        <item>culture_and_art</item>
+    </string-array>
+    
+    <string-array name="natural_landmarks_subcategories">
+        <item>waterfalls</item>
+        <item>peaks</item>
+        <item>lakes</item>
+        <item>gorges</item>
+        <item>springs</item>
+        <item>localities</item>
+        <item>national_parks</item>
+        <item>caves</item>
+        <item>reserves</item>
+        <item>rock_formations</item>
+    </string-array>
+
+    <string-array name="historical_landmarks_subcategories">
+        <item>revival_period</item>
+        <item>tombs</item>
+        <item>historical_sites</item>
+        <item>fortresses_and_ruins</item>
+        <item>roman</item>
+        <item>sanctuaries</item>
+        <item>medieval</item>
+        <item>thracian</item>
+    </string-array>
+
+    <string-array name="culture_and_art_subcategories">
+        <item>architectural</item>
+        <item>libraries</item>
+        <item>monasteries</item>
+        <item>museums</item>
+        <item>opera</item>
+        <item>chapels</item>
+        <item>squares</item>
+        <item>theaters</item>
+        <item>churches_and_temples</item>
+    </string-array>
+
+</resources>

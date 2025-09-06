@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">VizhGO</string>
+
+    <!-- Bottom navigation menu text -->
+    <string name="discover_fragment_text">Открий</string>
+    <string name="add_landmark_fragment_text">Добави</string>
+    <string name="map_fragment_text">Карта</string>
+    <string name="profile_fragment_text">Профил</string>
+
+    <!-- Basic button names -->
+    <string name="btn_submit">Добави</string>
+    <string name="btn_cancel">Отказ</string>
+    <string name="btn_edit">Редактирай</string>
+    <string name="btn_delete">Изтрий</string>
+
+
+    <string name="login_to_open_add_fragment">Влезте в профила си, за да добавите забележителност</string>
+
+
+
+    <!-- Map fragment -->
+    <string name="landmarks_failed_to_load">Грешка при зареждане на забележителностите</string>
+    <string name="map_legend">Легенда</string>
+    <string name="map_natural">Природни</string>
+    <string name="map_historical">Исторически</string>
+    <string name="map_art_culture">Култура и изкуство</string>
+
+    <!-- Profile Fragment -->
+    <string name="profile_your_added_landmarks_text">Вашите забележителности</string>
+    <string name="user_has_not_added_landmarks">Все още не сте добавили забележителност</string>
+
+    <!-- Edit fragment -->
+    <string name="edit_landmark_button_text">Промени забележителност</string>
+    <string name="edit_landmark_map_selected_location">Избрана локация</string>
+    <string name="edit_landmark_successfully1">Забележителността е променена успешно</string>
+    <string name="edit_landmark_error1">Грешка при промяна на забележителността</string>
+    <string name="edit_landmark_updated_successfully">Забележителността е променена успешно</string>
+    <string name="edit_landmark_update_failed">Грешка при запазване на промените</string>
+    <string name="edit_landmark_button_upload_image_text">Промяна на снимка</string>
+
+
+    <!-- Landmark Details Fragment -->
+    <string name="delete_landmark">Изтрий забележителност</string>
+    <string name="delete_landmark_message">Сигурни ли сте, че искате да изтриете тази забележителност?</string>
+    <string name="landmark_deleted_successfully">Забележителността е изтрита успешно</string>
+    <string name="landmark_deleted_error">Грешка при изтриване на забележителността</string>
+    <string name="error_loading_website">Грешка при зареждане на сайта</string>
+
+
+    <!-- Discover fragment text -->
+    <string name="category_all">Всички</string>
+    <string name="category_filter_hint">Избери категория</string>
+    <string name="no_landmarks_found">Няма намерени забележителности</string>
+    <string name="landmarks_adapter_fetching_data">Зареждане на данните</string>
+    <string name="all_landmarks">Всички забележителности</string>
+
+    <string name="review_text">Отзиви</string>
+    <string name="add_review_text">Добави отзив</string>
+    <string name="add_review_fullText">Напиши своя отзив тук</string>
+    <string name="no_reviews_message">Все още няма добавени отзиви</string>
+    <string name="review_please_select_rating">Моля изберете оценка</string>
+    <string name="review_please_add_review">Моля напишете отзив</string>
+    <string name="review_added_successfully">Отзивът е добавен успешно</string>
+    <string name="review_must_be_logged_in">Влезте в профила си, за да добавите отзив</string>
+    <string name="review_saving_error">Грешка при запазване на отзива</string>
+    <string name="review_checking_error">Грешка при зареждане на отзив</string>
+
+
+    <!-- RecyclerView/Item text -->
+    <string name="subcategory">Подкатегория:</string>
+    <string name="item_added_on_text">Добавено на:</string>
+    <string name="item_added_by_text">Добавено от:</string>
+    <string name="missing_category">Категорията липсва</string>
+    <string name="missing_subcategory">Подкатегорията липсва</string>
+    <string name="landmark_map">Карта</string>
+    <string name="landmark_visit_website">Линк към сайта</string>
+    <string name="landmark_text">Забележителност</string>
+    <string name="location_error_not_available">Данните за местоположение не са налични</string>
+    <string name="description_missing">Липсва описание</string>
+    <string name="landmark_description">Oписание</string>
+    <string name="landmark_picture">Снимка</string>
+    <string name="user_text">Потребител</string>
+    <string name="unknown_user">Липсва потребител</string>
+    <string name="unknown_date">Липсва дата</string>
+
+
+    <!-- Login and Register text -->
+    <string name="username_text">Потребителско име</string>
+    <string name="email_text">Имейл</string>
+    <string name="password_text">Парола</string>
+    <string name="password_confirm_text">Потвърди парола</string>
+    <string name="forgot_password_text">Забравена парола</string>
+    <string name="reset_password_text">Нулирай парола</string>
+    <string name="register_text">Регистрация</string>
+    <string name="alreadyHasAccount_text">Вече имаш профил?</string>
+
+    <string name="email_error_required">Имейлът е задължителен!</string>
+    <string name="email_error_enter_valid">Моля въведете валиден имейл!</string>
+    <string name="email_check_for_new_password">Проверете имейла си за да нулирате вашата парола!</string>
+    <string name="email_error_check_for_new_password">Опитайте отново! Нещо се обърка!</string>
+    <string name="password_error_lenght">Паролата трябва да е дълга поне 8 символа!</string>
+    <string name="password_error_dont_match">Паролите не съвпадат!</string>
+    <string name="username_error_lenght">Потребителското име трябва да е дълго поне 6 символа</string>
+    <string name="username_error_already_Taken">Това потребителско име вече се използва</string>
+    <string name="username_error_choose_another">Моля, изберете друго потребителско име</string>
+    <string name="username_error_checking_username">Грешка при проверка на потребителското име</string>
+
+    <string name="registration_successful">Регистрацията е успешна</string>
+    <string name="registration_unsuccessful">Регистрацията е неуспешна! Моля опитайте отново</string>
+    <string name="login_successful">Влязохте в профила си</string>
+    <string name="login_unsuccessful">Неуспешно влизане! Моля опитайте отново</string>
+
+    <string name="login_text">Вход</string>
+    <string name="logout_text">Излез</string>
+
+
+    <!-- Add landmark text -->
+    <string name="add_landmark_name">Заглавие</string>
+    <string name="add_landmark_description">Описание (по избор)</string>
+    <string name="add_landmark_link">Линк (по избор)</string>
+    <string name="add_landmark_button_text">Добави забележителност</string>
+    <string name="add_landmark_button_upload_image_text">Добави снимка</string>
+    <string name="add_landmark_map_select_location">Изберете локация</string>
+    <string name="add_landmark_map_use_info">Натиснете на картата за да изберете локация.</string>
+    <string name="add_landmark_map_selected_location">Избрана локация</string>
+    <string name="add_landmark_select_picture">Избери снимка</string>
+    <string name="add_landmark_picture_selected_successfully">Снимката е избрана успешно!</string>
+    <string name="add_landmark_btn_change_image">Смяна на снимка</string>
+
+    <string name="add_landmark_error_uploading_image">Грешка при качване на снимка</string>
+    <string name="add_landmark_error_must_be_logged_in">Трябва да сте влязъл в профила си</string>
+
+    <string name="add_landmark_added_successfully">Забележителността е добавена успешно</string>
+    <string name="add_landmark_add_failed">Грешка при добавяне</string>
+
+
+    <string name="add_landmark_error_empty_name">Въведи заглавие</string>
+
+
+    <!-- Landmark Categories and Subcategories -->
+    <string name="category_pick_name">Избери категория</string>
+    <string name="subcategory_pick_name">Избери подкатегория</string>
+
+    <string name="category_natural_landmarks">Природни забележителности</string>
+    <string name="category_historical_landmarks">Исторически забележителности</string>
+    <string name="category_culture_and_art">Култура и изкуство</string>
+
+
+    <!-- Natural subcategories -->
+    <string name="subcat_waterfalls">Водопади</string>
+    <string name="subcat_peaks">Върхове</string>
+    <string name="subcat_lakes">Езера</string>
+    <string name="subcat_gorges">Ждрела</string>
+    <string name="subcat_springs">Извори</string>
+    <string name="subcat_localities">Местности</string>
+    <string name="subcat_national_parks">Национални паркове</string>
+    <string name="subcat_reserves">Резервати</string>
+    <string name="subcat_caves">Пещери</string>
+    <string name="subcat_rock_formations">Скални образувания</string>
+
+    <!-- Historical subcategories -->
+    <string name="subcat_revival_period">Възрожденски</string>
+    <string name="subcat_tombs">Гробници</string>
+    <string name="subcat_historical_sites">Исторически местности</string>
+    <string name="subcat_fortresses_and_ruins">Крепости и руини</string>
+    <string name="subcat_roman">Римски</string>
+    <string name="subcat_sanctuaries">Светилища</string>
+    <string name="subcat_medieval">Средновековни</string>
+    <string name="subcat_thracian">Тракийски</string>
+
+    <!-- Culture subcategories -->
+    <string name="subcat_architectural">Архитектурни</string>
+    <string name="subcat_libraries">Библиотеки</string>
+    <string name="subcat_monasteries">Манастири</string>
+    <string name="subcat_museums">Музеи</string>
+    <string name="subcat_opera">Опера</string>
+    <string name="subcat_chapels">Параклиси</string>
+    <string name="subcat_squares">Площади</string>
+    <string name="subcat_theaters">Театри</string>
+    <string name="subcat_churches_and_temples">Църкви и храмове</string>
+
+
+</resources>

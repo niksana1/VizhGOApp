@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/discoverFragment"
+        android:title="@string/discover_fragment_text"
+        android:icon="@drawable/ic_discover"/>
+    <item
+        android:id="@+id/addLandmarkFragment"
+        android:title="@string/add_landmark_fragment_text"
+        android:icon="@drawable/ic_add"/>
+    <item
+        android:id="@+id/mapFragment"
+        android:title="@string/map_fragment_text"
+        android:icon="@drawable/ic_map"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile_fragment_text"
+        android:icon="@drawable/ic_profile"/>
+</menu>

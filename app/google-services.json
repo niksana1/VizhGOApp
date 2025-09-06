@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "63046947430",
+    "project_id": "vizhgodb",
+    "storage_bucket": "vizhgodb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63046947430:android:17065f20b2a94866d9d3a7",
+        "android_client_info": {
+          "package_name": "com.example.vizhgoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcGhj6ueN0-tAqKvYGgAexyNYS9MPn6Bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

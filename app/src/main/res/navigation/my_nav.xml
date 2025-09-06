@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/discoverFragment">
+
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="com.example.vizhgoapp.ui.discover.DiscoverFragment"
+        android:label="@string/discover_fragment_text"
+        tools:layout="@layout/fragment_discover" >
+        <action
+            android:id="@+id/action_discoverFragment_to_landmarkDetailsFragment"
+            app:destination="@id/landmarkDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.vizhgoapp.ui.profile.ProfileFragment"
+        android:label="@string/profile_fragment_text"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addLandmarkFragment"
+        android:name="com.example.vizhgoapp.ui.add.AddLandmarkFragment"
+        android:label="@string/add_landmark_fragment_text"
+        tools:layout="@layout/fragment_add_landmark" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.vizhgoapp.ui.map.MapFragment"
+        android:label="@string/map_fragment_text"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.vizhgoapp.ui.profile.LoginFragment"
+        android:label="@string/login_text"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@+id/profileFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_discoverFragment"
+            app:destination="@id/discoverFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_addLandmarkFragment"
+            app:destination="@id/addLandmarkFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.vizhgoapp.ui.profile.RegisterFragment"
+        android:label="@string/register_text"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@+id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_discoverFragment"
+            app:destination="@+id/discoverFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.vizhgoapp.ui.profile.ForgotPassword"
+        android:label="@string/forgot_password_text"
+        tools:layout="@layout/fragment_forgot_password" />
+
+    <fragment
+        android:id="@+id/landmarkDetailsFragment"
+        android:name="com.example.vizhgoapp.ui.discover.LandmarkDetailsFragment"
+        android:label="@string/landmark_text"
+        tools:layout="@layout/fragment_landmark_details" />
+
+    <fragment
+        android:id="@+id/editLandmarkFragment"
+        android:name="com.example.vizhgoapp.ui.discover.EditLandmarkFragment"
+        android:label="@string/landmark_text"
+        tools:layout="@layout/fragment_edit_landmark" />
+
+</navigation>

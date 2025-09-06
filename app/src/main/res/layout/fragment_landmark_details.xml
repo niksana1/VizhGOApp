@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.discover.LandmarkDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+<!--        android:padding="12dp"-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Buttons Edit, Delete -->
+            <LinearLayout
+                android:id="@+id/layout_edit_delete_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:paddingEnd="16dp"
+                android:gravity="end"
+                android:visibility="gone">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:text="@string/btn_edit"
+                    android:textSize="14sp"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    app:icon="@drawable/ic_edit"
+                    app:iconSize="18dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_delete"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/design_default_color_error"
+                    app:icon="@drawable/ic_delete"
+                    app:iconSize="18dp" />
+
+            </LinearLayout>
+
+            <!-- Landmark information CardView  -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_full_landmark_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Landmark Image  -->
+                    <ImageView
+                        android:id="@+id/iv_landmark_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginBottom="16dp"
+                        android:contentDescription="@string/landmark_picture"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_placeholder_image" />
+
+
+                    <!-- Landmark name  -->
+                    <TextView
+                        android:id="@+id/tv_landmark_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:text="@string/add_landmark_name" />
+
+                    <!-- Subcategory and rating on the same line  -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <!-- Landmark Subcategory  -->
+                        <TextView
+                            android:id="@+id/tv_subcategory"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="14sp"
+                            android:text="@string/subcategory"/>
+
+                        <!-- Landmark Average Rating  -->
+                        <TextView
+                            android:id="@+id/tv_landmark_avg_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- "Description" title -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/landmark_description"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+                    <!-- Landmark Description  -->
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:lineSpacingExtra="2dp"
+                        android:textSize="14sp"
+                        android:text="@string/description_missing"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="italic"/>
+
+
+
+
+                    <!-- Map info -->
+                    <!-- Landmark Location Text -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/landmark_map"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <!-- Map - Longitude, Latitude  -->
+                    <TextView
+                        android:id="@+id/tv_location_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/landmark_map"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <!-- Map container -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardUseCompatPadding="true">
+
+                        <fragment
+                            android:id="@+id/map_fragment"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Button Open Link-->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_visit_link"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:backgroundTint="#F8F8F8"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp"
+                        android:text="@string/landmark_visit_website"
+                        app:strokeColor="#E0E0E0"
+                        app:strokeWidth="1dp"
+                        app:cornerRadius="6dp"
+                        app:icon="@drawable/ic_link" />
+
+                    <!-- Author and date information  -->
+                    <LinearLayout
+                        android:id="@+id/layout_added_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal">
+
+                        <!-- Label "added by" -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="14sp"
+                            android:text="@string/item_added_by_text" />
+
+                        <!-- Username  -->
+                        <TextView
+                            android:id="@+id/tv_added_by"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="4dp"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="@string/user_text"/>
+
+                        <!-- Created on (Date)  -->
+                        <TextView
+                            android:id="@+id/tv_added_on_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="14sp"
+                            android:text="10.10.2025" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!-- Reviews Section  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tv_reviewName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:text="@string/review_text" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_add_review"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F8F8F8"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:text="@string/add_review_text"
+                    app:strokeColor="#E0E0E0"
+                    app:strokeWidth="1dp"
+                    app:cornerRadius="6dp" />
+
+            </LinearLayout>
+
+            <!-- No reviews message (hidden by default) -->
+            <TextView
+                android:id="@+id/tv_no_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/no_reviews_message"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/review_item" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>
